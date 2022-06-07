@@ -1,6 +1,6 @@
 # core-javascript 강의 내용 및 예제를 정리하는 repo
 
-<h1>목차</h1>
+<h1>내용</h1>
 
 <p>1. 실행 컨텍스트</p>
 <p>2. this</p>
