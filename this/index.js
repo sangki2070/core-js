@@ -164,11 +164,11 @@ function Person(n, a) {
   this.age = a;
 }
 
-var roy = Person("재남", 30);
+var jay = Person("상기", 31);
 
 function Person(n, a) {
   this.name = n;
   this.age = a;
 }
 
-var roy = new Person("재남", 30);
+var jay = new Person("상기", 31);
