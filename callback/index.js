@@ -36,3 +36,25 @@ function cbFunc() {
 }
 
 document.getElementById("a").addEventListener("click", cbFunc);
+
+// 주의점
+
+var arr = [1, 2, 3, 4, 5];
+
+var obj = {
+  vals: [1, 2, 3],
+  logValues: function (v, i) {
+    if (this.vals) {
+      console.log(this.vals, v, i);
+    } else {
+      console.log(this, v, i);
+    }
+  },
+};
+
+obj.logValues(1, 2); // 메서드로 호출 this = obj
+arr.forEach(obj.logValues); // 콜백 함수로 넘긴것, this = window 객체
+
+//this를 obj로 하고싶다면?
+arr.forEach(obj.logValues, obj);
+arr.forEach(obj.logValues.bind(obj));
