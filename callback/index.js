@@ -24,6 +24,9 @@ arr.forEach(
 
 console.log(entries);
 
+//forEach method에는 첫번째 인는 콜백, 2번째 인는 thisArg
+//그래서 this는 [10,20,30,40,50]이 된다.
+
 // this
 
 document.body.innerHtmL = '<div id="a">abc</div>';
