@@ -67,3 +67,5 @@ jay.getAge();
 mumu.setOlder();
 
 mumu.getAge();
+
+//prototype으로 인해 반복하지 않고 코드 작성 가능
